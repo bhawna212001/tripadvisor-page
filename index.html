@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js"
+        integrity="sha512-ovlWyhrYXr3HEkGJI5YPXIFYIbHEKs2yfemKVVIIQe9U74tXyTuVdzMlvZlw/0X5lnIDRgtVlckrkeuCrDpq4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/pride_month_Tripadvisor_lockup_horizontal_secondary.svg">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </nav>
+        <div>
+            <i class="fa-solid fa-globe"></i>
+            <span>INR</span>
+            <button class="sign">Sign in</button>
+        </div>
+    </header>
+
+
+    <section class="search">
+        <div class="search-options">
+            <h1>Where to?</h1>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i>Search All</a></li>
+                <li><a href="#"><i class="fa-solid fa-bed"></i>Hotels</a></li>
+                <li><a href="#"><i class="fa-solid fa-camera"></i>Things to do</a></li>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Restaurnts</a></li>
+                <li><a href="#"><i class="fa-solid fa-plane-circle-check"></i>Flights</a></li>
+                <li><a href="#"><i class="fa-solid fa-house-chimney"></i>Holiday Homes</a></li>
+            </ul>
+            <div class="searchbar">
+                <div>
+                    <input type="search" placeholder="🔍︎      Places to go, things to do, hotels....">
+                </div>
+                <!-- <div>
+            <button id="searchbtn">Search</button>
+            </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="trip">
+        <div class="images">
+            <img src="images/trip.gif">
+        </div>
+        <div class="about">
+            <h2>Book the best part of your trip</h2>
+            <h3>Browse unforgottable things to-do right here</h3>
+            <button class="find">Find things to do </button>
+        </div>
+    </section>
+
+    <section class="interest">
+        <div>
+            <h3>Find things to do by interest</h3>
+            <span>Whatever you're into, we've got it</span>
+        </div>
+        <div class="pictures">
+            <div class="picture">
+                <img src="images/outdoor.jpg">
+                <span>Outdoor</span>
+            </div>
+            <div class="picture">
+                <img src="images/food.jpg">
+                <span>Food</span>
+            </div>
+            <div class="picture">
+                <img src="images/culture.jpg">
+                <span>Culture</span>
+            </div>
+            <div class="picture">
+                <img src="images/water.jpg">
+                <span>Water</span>
+            </div>
+        </div>
+        <div class="visa">
+            <img src="images/visa.jpg">
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="delhi">
+            <h3>Explore experiences near New Delhi</h3>
+            <span>Can't-miss picks near you</span>
+        </div>
+        <div class="places">
+            <div class="cities">
+                <img src="images/agra.jpg">
+                <p>3-Day Delhi, Agra and Jaipur Private Tour - India Golden Triangle</p>
+                <div class="rating">
+                    <div>
+                        <span>5.0</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(155)</span>
+                    </div>
+                </div>
+                <span>from ₹11,465 per adult</span>
+            </div>
+            <div class="cities">
+                <img src="images/delhi.jpg">
+                <p>Old & New Delhi City Tour - Half or Full Day Options Available</p>
+                <div class="rating">
+                    <div>
+                        <span>5.0</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(15)</span>
+                    </div>
+                </div>
+                <span>from ₹3,351 per adult</span>
+            </div>
+            <div class="cities">
+                <img src="images/tajmahal.jpg">
+                <p>Same Day Tah Mahal, Agra Fort & Baby Taj Tour From Delhi by Car</p>
+                <div class="rating">
+                    <div>
+                        <span>5.0</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(82)</span>
+                    </div>
+                </div>
+                <span> from ₹5,468 per adult</span>
+            </div>
+            <div class="cities">
+                <img src="images/c.d delhi.jpg">
+                <p>Chandni Chowk Delhi Food Tour with 15+ Tastings</p>
+                <div class="rating">
+                    <div>
+                        <span>5.0</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(82)</span>
+                    </div>
+                </div>
+                <span> from ₹3,087 per adult</span>
+            </div>
+        </div>
+        <div class="visa">
+            <img src="images/thailand.jpg">
+        </div>
+    </section>
+
+    <div class="inspire">
+        <section class="abroad">
+            <div class="insp">
+                <h3>Inspiration to get you going</h3>
+            </div>
+            <div class="inspiration">
+                <div>
+                    <img src="images/dubai.jpg">
+                    <p>Where to stargaze aroundthe world, from Utah to Dubai</p>
+                </div>
+                <div>
+                    <img src="images/paris.jpg">
+                    <p>Load up on art in Paris, NY, nd other culture hot spots</p>
+                </div>
+                <div>
+                    <img src="images/food trips.jpg">
+                    <p>13 cities, 13 unbelievable food trips</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="things">
+        <div>
+            <h3>Things to do-right now</h3>
+            <span>Seasonal faves you don't want to miss</span>
+        </div>
+        <div class="activities">
+
+            <div class="activity">
+                <img src="images/sorrento.jpg">
+                <p>Small-group boat tour of the Amalfi Coast from Sorrento</p>
+                <div class="rating">
+                    <div>
+                        <span>4.8</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(316)</span>
+                    </div>
+                </div>
+                <span>from ₹15,763 per adult</span>
+            </div>
+
+            <div class="activity">
+                <img src="images/alburefia.jpg">
+                <p>Dophins Search and Benagil Caves from Albufeira</p>
+                <div class="rating">
+                    <div>
+                        <span>4.9</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(3,235)</span>
+                    </div>
+                </div>
+                <span>from ₹3,583 per adult</span>
+            </div>
+
+            <div class="activity">
+                <img src="images/calgary.jpg">
+                <p>Explore Banff National Park with Our Premium Day Tour</p>
+                <div class="rating">
+                    <div>
+                        <span>5.0</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(249)</span>
+                    </div>
+                </div>
+                <span>from ₹10,310 per adult</span>
+            </div>
+
+            <div class="activity">
+                <img src="images/jackson.jpg">
+                <p>Whitewater Rafting in Jackson Hole:Small Boat Excitement</p>
+                <div class="rating">
+                    <div>
+                        <span>4.9</span>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <span>(151)</span>
+                    </div>
+                </div>
+                <span>from ₹11,465 per adult</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="next-trip">
+        <div>
+            <h3>Your Next Trip is Waiting</h3>
+            <h3>Weekends getaways from New Delhi</h3>
+        </div>
+        <div class="nearby-places">
+            <div class="nearby">
+                <img src="images/mussoorie.jpg">
+                <span>Mussorie,India</span>
+            </div>
+            <div class="nearby">
+                <img src="images/rishikesh.jpg">
+                <span>Rishikesh, India</span>
+            </div>
+            <div class="nearby">
+                <img src="images/view-from-upwards.jpg">
+                <span>Dehradun,India</span>
+            </div>
+            <div class="nearby">
+                <img src="images/the-magnificent-corbett.jpg">
+                <span>Jim Corbett National Park,India</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="iconic">
+        <div>
+            <h3>Iconic places you need to see</h3>
+        </div>
+        <div class="visit">
+            <div class="best-places">
+                <img src="images/rome.jpg">
+                <span>Rome,Italy</span>
+            </div>
+            <div class="best-places">
+                <img src="images/paris (1).jpg">
+                <span>Paris,France</span>
+            </div>
+            <div class="best-places">
+                <img src="images/nv.jpg">
+                <span>Las Vegas,NV</span>
+            </div>
+            <div class="best-places">
+                <img src="images/iceland.jpg">
+                <span>Reykjavik,Iceland</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="wander">
+        <div class="bike">
+            <img src="images/bike.jpg">
+        </div>
+        <div class="wanderer">
+            <div>
+                <div>
+                    <img src="images/logo.svg">
+                </div>
+                <div>
+                    <p>Sponsored by <span>Wanderlab</span></p>
+                </div>
+            </div>
+            <h3>Watch the Wanderer</h3>
+            <p>Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video</p>
+            <button class="learn">Learn More</button>
+        </div>
+    </section>
+
+    <div class="traveller">
+        <section class="travel">
+            <div class="content">
+                <h2>Travellers' Choice Awards Best of the Best</h2>
+                <p>Among our top 1% of places, stays,
+                    eats, and experiences=decided by you.</p>
+                <button class="see">See the Winners</button>
+            </div>
+            <div class="girl">
+                <img src="images/girl.png">
+            </div>
+        </section>
+    </div>
+
+    <section class="browse">
+        <h3>Browse themed collections</h3>
+        <div class="collections">
+            <div class="exploring">
+                <img src="images/pizza.jpg">
+                <span>Pizza, Roman style</span>
+                <p>Classes and experiences for authentic pizza</p>
+            </div>
+            <div class="exploring">
+                <img src="images/beach.jpg">
+                <span>Get right to the reef</span>
+                <p>Ways to explore the Great Barrier Reef</p>
+            </div>
+            <div class="exploring">
+                <img src="images/diversion.jpg">
+                <span>Take a grand diversion</span>
+                <p>Tours to the Grand Canyon from Vegas</p>
+            </div>
+            <div class="exploring">
+                <img src="images/london.jpg">
+                <span>London,after dark</span>
+                <p>There's lots to do when the sun goes down</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="block">
+            <div class="block-1">
+                <div class="footer">
+                    <div class="list">
+                        <ul>
+                            <li><a href="">About Tripadvisor</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">Resources and Policies</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Trust & Safety</a></li>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">Tripadvisor Technology Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="">Explore</a></li>
+                            <li><a href="">Write a review</a></li>
+                            <li><a href="">Add a Place</a></li>
+                            <li><a href="">Join</a></li>
+                            <li><a href="">Traveller's Chice</a></li>
+                            <li><a href="">Help Centre</a></li>
+                            <li><a href="">Travel Stories</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="">Do Business With Us</a></li>
+                            <li><a href="">Owners & DMO/CVB</a></li>
+                            <li><a href="">Business Advantage</a></li>
+                            <li><a href="">Sponsored Placements</a></li>
+                            <li><a href="">Access our Content API</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sites">
+                    <p>Tripadvisor Sites</p>
+                    <span>Book tours and attraction tickets on Viator</span>
+                </div>
+            </div>
+
+            <div class="block-2">
+                <div class="footer-links">
+                    <div class="footer-img">
+                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                            alt="Tripadvisor logo">
+                        <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+                    </div>
+                    <div class="policy-links">
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy and Cookies Statement</a>
+                        <a href="#">Cookie consent</a>
+                        <a href="#">Site Map</a>
+                        <a href="#">How the site works</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Accessibility Statement</a>
+                    </div>
+                    <p>Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites and
+                        applications. Listed prices may require a stay of a particular length or have blackout dates,
+                        qualifications or other applicable restrictions.... <a href="#">Read more</a></p>
+                </div>
+
+                <div class="footer-settings">
+                    <div>
+                        <select>
+                            <option>₹ INR</option>
+                            <option>$ USD</option>
+                        </select>
+                        <select>
+                            <option>India</option>
+                            <option>USA</option>
+                        </select>
+                    </div>
+
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
