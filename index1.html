@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in Form</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.2.4/svg.min.js"
+        integrity="sha512-ovlWyhrYXr3HEkGJI5YPXIFYIbHEKs2yfemKVVIIQe9U74tXyTuVdzMlvZlw/0X5lnIDRgtVlckrkeuCrDpq4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        #drop1{
+  /* display:none; */
+  position: absolute;
+  width: 450px;
+  height: 550px;
+  /* right: 20px; */
+  justify-self: center;
+  border: 1px solid lightgray;
+  box-shadow: 10px white;
+  background-color: white;
+  z-index: 99;
+  border-radius: 10px;
+  padding: 30px;
+  flex-direction: column;
+  overflow-y: overlay;
+}
+#drop1 i{
+  float: right;
+}
+#drop1 img{
+  width: 70px;
+  height: 70px;
+  margin-top: 30px;
+}
+#drop1 h2{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom:60px;
+  width: 78%;
+}
+#drop1 button{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 30px;
+    gap: 80px;
+    margin-top: 30px; 
+    font-weight: 500; 
+}
+#drop1 .para{
+  margin-top: 100px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+    </style>
+</head>
+<body>
+    <div class="container" id="drop1">
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+                <div>
+                <img src="images/logo trip.svg">
+                <h2>Sign in to unlock the best of Tripadvisor.</h2>
+                </div>
+
+                <div>
+                    <button><i class="fa-brands fa-google"></i>Continue with Google</button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-envelope"></i>Continue with email</button>
+                </div>
+
+                <div class="para">
+                    <p>By proceeding,you agree to our Terms of Use and confirm you have read our Privacy and cookies Statement</p>
+                    <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                </div>
+             </div>
+
+             <script>
+                let cancel=document.getElementById("cancel"); 
+cancel.addEventListener('click', ()=> {
+ const modal = document.querySelector("#drop1")
+    modal.style.display="none";
+});
+             </script>
+
+</body>
+</html>

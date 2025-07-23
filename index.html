@@ -20,23 +20,130 @@
         <img src="images/pride_month_Tripadvisor_lockup_horizontal_secondary.svg">
         <nav class="navbar">
             <ul>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Trips</a></li>
-                <li><a href="#">Review</a></li>
-                <li><a href="#">Forums</a></li>
+                <li>
+                    <button onclick="myfunction()">Discover</button></li>
+                <div id="click">
+                    <span>Travellers' Choice</span>
+                    <span>Travel Stories</span>
+                </div>
+                <li>
+                    <button onclick="myfunction1()">Trips</button></li>
+                <div id="click1">
+                    <span>View my trip</span>
+                    <span>Start a new trip</span>
+                    <span>Create trip with AI</span>
+                </div>
+                <li>
+                    <button onclick="myfunction2()">Review</button></li>
+                <div id="click2">
+                    <span>Write a review</span>
+                    <span>Post Photos</span>
+                    <span>Add a place</span>
+                </div>
+                <li>
+                    <button>Forums</button></li>
             </ul>
         </nav>
         <div>
+            <p>
             <i class="fa-solid fa-globe"></i>
             <span>INR</span>
-            <button class="sign">Sign in</button>
+            </p>
+            <button class="sign" id="signin" onclick="dropdown()">Sign in</button>
         </div>
     </header>
+   
+             
+             <div class="container" id="drop">
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+                <div>
+                <img src="images/logo trip.svg">
+                <h2>Sign in to unlock the best of Tripadvisor.</h2>
+                </div>
+
+                <div>
+                    <button><i class="fa-brands fa-google"></i>Continue with Google</button>
+                </div>
+                <div>
+                    <button><i class="fa-solid fa-envelope"></i>Continue with email</button>
+                </div>
+
+                <div class="para">
+                    <p>By proceeding,you agree to our Terms of Use and confirm you have read our Privacy and cookies Statement</p>
+                    <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                </div>
+             </div>
 
 
-    <section class="search">
+        
+    
+
+    <section class="header1">
+        <nav class="navbar1">
+            <div class="navigation">
+                    <div class="navbar-container container">
+                        <input type="checkbox" name="" id="menu">
+                          <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <ul class="menu-items">
+                            <li><a href="#">Write a review</a></li>
+                            <li><a href="#">Trips</a></li>
+                            <li><a href="#">Travellors' Choice</a></li>
+                            <li><a href="#">Travel Stories</a></li>
+                            <hr>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Things to Do</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Flights</a></li>
+                            <li><a href="#">Holiday Homes</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <hr>
+                            <li><a href="#">Post photos</a></li>
+                            <li><a href="#">Add a place</a></li>
+                        </ul>
+                    </div>
+                <div>
+                    <img src="images/logo2.svg">
+                </div>
+                <div>
+                    <button onclick="location.href='index1.html'">
+                    <i class="fa-solid fa-circle-user"></i></button>
+                </div>
+    
+            </div>
+        </nav>
+    </section>
+
+    <section class="search"> 
         <div class="search-options">
-            <h1>Where to?</h1>
+            <h1> <div id="select">Where to?</div></h1>
+            <ul>
+                <button class="list active" data-size="Where to?">
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i>Search All</a></li></button>
+
+                <button class="list" data-size="Stay Somewhere Great">
+                <li><a href="#"><i class="fa-solid fa-bed"></i>Hotels</a></li></button>
+
+                <button class="list" data-size="Do something fun">
+                <li><a href="#"><i class="fa-solid fa-camera"></i>Things to do</a></li></button>
+
+                <button class="list" data-size="Find places to eat">
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Restaurnts</a></li></button>
+
+                <button class="list" data-size="Find the best flight">
+                <li><a href="#"><i class="fa-solid fa-plane-circle-check"></i>Flights</a></li></button>
+
+                <button class="list" data-size="Find the best places to rent">
+                <li><a href="#"><i class="fa-solid fa-house-chimney"></i>Holiday Homes</a></li></button>
+            </ul>
+        </div>
+    </section>
+
+    <section class="search1">
+         <div class="search-options">
             <ul>
                 <li><a href="#"><i class="fa-solid fa-newspaper"></i>Search All</a></li>
                 <li><a href="#"><i class="fa-solid fa-bed"></i>Hotels</a></li>
@@ -45,20 +152,20 @@
                 <li><a href="#"><i class="fa-solid fa-plane-circle-check"></i>Flights</a></li>
                 <li><a href="#"><i class="fa-solid fa-house-chimney"></i>Holiday Homes</a></li>
             </ul>
-            <div class="searchbar">
-                <div>
-                    <input type="search" placeholder="🔍︎      Places to go, things to do, hotels....">
-                </div>
-                <!-- <div>
-            <button id="searchbtn">Search</button>
+            <!-- <div class="searchbar">
+                    <input type="search" placeholder="🔍︎     Places to go, things to do, hotels....">
+                    <button>Search</button>
             </div> -->
-            </div>
         </div>
     </section>
+    <div class="searchbar">
+                    <input type="search" placeholder="🔍︎     Places to go, things to do, hotels....">
+                    <button>Search</button>
+            </div>
 
     <section class="trip">
         <div class="images">
-            <img src="images/trip.gif">
+            <img src="images/trip2.webp">
         </div>
         <div class="about">
             <h2>Book the best part of your trip</h2>
@@ -172,7 +279,6 @@
                         <i class="fa-solid fa-circle"></i>
                         <i class="fa-solid fa-circle"></i>
                         <i class="fa-solid fa-circle"></i>
-                        <i class="fa-solid fa-circle"></i>
                     </div>
                     <div>
                         <span>(82)</span>
@@ -184,7 +290,7 @@
         <div class="visa">
             <img src="images/thailand.jpg">
         </div>
-    </section>
+      </section>
 
     <div class="inspire">
         <section class="abroad">
@@ -251,7 +357,7 @@
                         <i class="fa-solid fa-circle"></i>
                     </div>
                     <div>
-                        <span>(3,235)</span>
+                        <span>(325)</span>
                     </div>
                 </div>
                 <span>from ₹3,583 per adult</span>
@@ -300,7 +406,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="next-trip">
         <div>
@@ -369,13 +474,13 @@
             <button class="learn">Learn More</button>
         </div>
     </section>
-
+         
     <div class="traveller">
         <section class="travel">
             <div class="content">
                 <h2>Travellers' Choice Awards Best of the Best</h2>
                 <p>Among our top 1% of places, stays,
-                    eats, and experiences=decided by you.</p>
+                    eats, and experiences-decided by you.</p>
                 <button class="see">See the Winners</button>
             </div>
             <div class="girl">
@@ -415,9 +520,9 @@
         <div class="block">
             <div class="block-1">
                 <div class="footer">
-                    <div class="list">
+                    <div class="list1">
                         <ul>
-                            <li><a href="">About Tripadvisor</a></li>
+                            <span>About Tripadvisor</span>
                             <li><a href="">About us</a></li>
                             <li><a href="">Press</a></li>
                             <li><a href="">Resources and Policies</a></li>
@@ -427,9 +532,9 @@
                             <li><a href="">Tripadvisor Technology Blog</a></li>
                         </ul>
                     </div>
-                    <div class="list">
+                    <div class="list2">
                         <ul>
-                            <li><a href="">Explore</a></li>
+                            <span>Explore</span>
                             <li><a href="">Write a review</a></li>
                             <li><a href="">Add a Place</a></li>
                             <li><a href="">Join</a></li>
@@ -438,9 +543,9 @@
                             <li><a href="">Travel Stories</a></li>
                         </ul>
                     </div>
-                    <div class="list">
+                    <div class="list3">
                         <ul>
-                            <li><a href="">Do Business With Us</a></li>
+                            <span>Do Business With Us</span>
                             <li><a href="">Owners & DMO/CVB</a></li>
                             <li><a href="">Business Advantage</a></li>
                             <li><a href="">Sponsored Placements</a></li>
@@ -457,8 +562,7 @@
             <div class="block-2">
                 <div class="footer-links">
                     <div class="footer-img">
-                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-                            alt="Tripadvisor logo">
+                        <img src="images/logo trip.svg">
                         <p>© 2025 Tripadvisor LLC All rights reserved.</p>
                     </div>
                     <div class="policy-links">
@@ -470,6 +574,7 @@
                         <a href="#">Contact us</a>
                         <a href="#">Accessibility Statement</a>
                     </div>
+                
                     <p>Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites and
                         applications. Listed prices may require a stay of a particular length or have blackout dates,
                         qualifications or other applicable restrictions.... <a href="#">Read more</a></p>
@@ -477,13 +582,15 @@
 
                 <div class="footer-settings">
                     <div>
-                        <select>
-                            <option>₹ INR</option>
-                            <option>$ USD</option>
+                        <select id="country" onchange="updateCurrency()">
+                            <option value="IN">India</option>
+                            <option value="US">USA</option>
+                            <option value="JP">Japan</option>
+                            <option value="GB">United Kingdom</option>
                         </select>
-                        <select>
-                            <option>India</option>
-                            <option>USA</option>
+                
+                         <select id="currency">
+                            <option value="">INR</option>
                         </select>
                     </div>
 
@@ -499,7 +606,110 @@
 
             </div>
         </div>
+        <div>
+            <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+        </div>
     </footer>
+
+<div class="media-footer">
+    <section class="footer1">
+        <div class="accordion">
+            <button class="sections">About Tripadvisor<i class="fa-solid fa-angle-down"></i></button>
+            <div class="section">
+                <ul>
+                    <li>About Us</li>
+                    <li>Press</li>
+                    <li>Resources and Policies</li>
+                    <li>Careers</li>
+                    <li>Trust & Safety</li>
+                    <li>Contact us</li>
+                    <li>Tripadvisor Technology Blog</li>
+                </ul>
+            </div>
+
+            <button class="sections">Explore<i class="fa-solid fa-angle-down"></i></button>
+            <div class="section">
+                <ul>
+                    <li>Help Centre</li>
+                    <li>Travel Articles</li>
+                </ul>
+            </div>
+
+            <button class="sections">Do Business With us<i class="fa-solid fa-angle-down"></i></button>
+            <div class="section">
+                <ul>
+                    <li>Owners & DMO/CVB</li>
+                    <li>Business Advantage</li>
+                    <li>Sponsored Placements</li>
+                    <li>Access our Content API</li>
+                </ul>
+            </div>
+
+            <button class="sections">Get The App<i class="fa-solid fa-angle-down"></i></button>
+            <div class="section">
+                <ul>
+                    <li>Android App</li>
+                </ul>
+            </div>
+
+            <button class="sections">Tripadvisor Sites<i class="fa-solid fa-angle-down"></i></button>
+            <div class="section">
+                <ul>
+                    <li>Book tours and attraction tickets on Viator</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-settings">
+                    <div>
+                        <select id="country1" onchange="updateCurrency1()">
+                            <option value="IN">India</option>
+                            <option value="US">USA</option>
+                            <option value="JP">Japan</option>
+                            <option value="GB">United Kingdom</option>
+                        </select>
+                
+                         <select id="currency1">
+                            <option value="">INR</option>
+                        </select>
+                    </div>
+
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+        </div>
+         <div class="footer-links1">
+                    <div class="footer-img1">
+                        <img src="images/logo trip.svg">
+                    </div>
+                    <div class="policy-links1">
+                        <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy and Cookies Statement</a>
+                        <a href="#">Cookie consent</a>
+                        <a href="#">Site Map</a>
+                        <a href="#">How the site works</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Accessibility Statement</a>
+                    </div>
+         </div>
+                
+        <p>Tripadvisor LLC makes no guarantees for availability of prices advertised on our sites and
+        applications. Listed prices may require a stay of a particular length or have blackout dates,
+        qualifications or other applicable restrictions.... <a href="#">Read more</a></p>
+         
+        <div>
+            <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+        </div>
+    </section>
+</div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
