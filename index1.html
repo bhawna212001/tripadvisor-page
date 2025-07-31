@@ -13,24 +13,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        #drop1{
-  /* display:none; */
+   #drop1{
   position: absolute;
-  width: 450px;
   height: 550px;
-  /* right: 20px; */
   justify-self: center;
-  border: 1px solid lightgray;
   box-shadow: 10px white;
   background-color: white;
   z-index: 99;
   border-radius: 10px;
   padding: 30px;
   flex-direction: column;
-  overflow-y: overlay;
+  overflow-y: auto;
 }
-#drop1 i{
+#drop1 .cross{
   float: right;
+  background: none;
+  border: none;
+  justify-content: end;
 }
 #drop1 img{
   width: 70px;
@@ -67,7 +66,9 @@
 </head>
 <body>
     <div class="container" id="drop1">
+      <button class="cross" onclick="location.href='index.html' ">
                 <i class="fa-solid fa-xmark" id="cancel"></i>
+      </button>
                 <div>
                 <img src="images/logo trip.svg">
                 <h2>Sign in to unlock the best of Tripadvisor.</h2>

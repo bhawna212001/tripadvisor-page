@@ -39,18 +39,6 @@ function scrollToTop() {
 }
 
 
-//to stop the body scrolling when the menu container of hamburger is open
-document.addEventListener('DOMContentLoaded', function(){
-    var sidemenu = document.getElementById('menu');
-    var body = document.body;
-    sidemenu.addEventListener('change' , function(){
-        if(sidemenu.checked){
-            body.classList.add('menu-items-open');
-        }else{
-            body.classList.remove('menu-items-open');
-        }
-    });
-});
 
 
 
@@ -164,6 +152,7 @@ const buttons = document.querySelectorAll('.list');
 
 
 
+
 //opening the dropdown when the signin button is clicked
 function dropdown(){
   const content=document.getElementById("drop");
@@ -171,17 +160,19 @@ function dropdown(){
     content.style.display ="none";
   }
   else{
-    content.style.display="block";
+    // content.style.display="block";
+    content.classList.add("block");
+  }
+
+  window.onclick = function(e) {
+  if (e.target !== content && !content.contains(e.target)) {
+    // content.style.display = "none";
+    content.classList.add("hidden");
   }
 }
-window.onclick=function(event){
-  if(!event.target.matches('.dropdown')){
-    document.getElementById('#drop').style.display="none";
-  }
 }
 
-
-//to stop the body moving when sigin box is opened
+// //to stop the body moving when sigin box is opened
     function dropdown() {
   const modal = document.getElementById("drop");
 
@@ -191,10 +182,78 @@ window.onclick=function(event){
   } else {
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
-    body.style.filter="blur(1)"
+    document.body.style.filter = "blur(5px)";
   }
 }
 
 document.getElementById("cancel").addEventListener("click", () => {
   dropdown();
 });
+
+
+// window.addEventListener("click", function(event) {
+//   if (!drop.contains(event.target) && event.target.id !== "cancel") {
+//     dropdown();
+//   }
+// });
+
+// function drop(){
+//   // const navmenu=document.getElementById("menu-toggle");
+//   const navmenuitem= document.getElementById("menu-items");
+
+
+  // if(navmenuitem.style.display == "block"){
+  //   navmenuitem.style.display ="none";
+  // }
+  // else{
+  //   navmenuitem.style.display="block";
+  // }
+  const navmenuitem= document.getElementById("menu-items");
+  const cross=document.getElementById("cancelled");
+  cross.addEventListener("click", () =>{
+    // navmenuitem.style.display= "none";
+    navmenuitem.classList.remove("active");
+    navmenuitem.classList.add("hidden");
+
+  });
+
+
+
+
+
+  // const toggleBtn = document.getElementById("menu-toggle");
+  //   toggleBtn.addEventListener("click", () => {
+  //     menu-items.classList.toggle("show");
+  //   });
+ 
+
+
+//to stop the body scrolling when hamburger is opened
+//     function drop() {
+//   const modal1 = document.getElementById("menu-items");
+
+//   if (modal1.classList.contains("hidden")) {
+//     modal1.classList.remove("hidden");
+
+//   }
+ 
+//   if (modal1.classList.contains("active")) {
+//     modal1.classList.remove("active");
+//     document.body.style.overflow = "auto";
+//   } else {
+//     modal1.classList.add("active");
+//     document.body.style.overflow = "hidden";
+//   }
+// }
+
+    function drop() {
+  const modal1 = document.getElementById("menu-items");
+ 
+  if (modal1.classList.contains("active")) {
+    modal1.classList.remove("active");
+    document.body.style.overflow = "auto";
+  } else {
+    modal1.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+}
